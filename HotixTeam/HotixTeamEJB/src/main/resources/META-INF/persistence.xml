@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="HotixTeamEJB">
+		<jta-data-source>java:/hotixDS</jta-data-source>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.Administrator</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.Branch</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.Client</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.ClientEmp</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.Contrat</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.ContratPK</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.Document</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.EmpGp</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.EmpGpPK</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.Employee</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.EmployeeBranch</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.EmployeeBranchPK</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.Groupe</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.Module</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.Profil</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.Project</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.Stat</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.Task</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.Type</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.User</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.Visibility</class>
+		<class>tn.hotixsoft.HotixTeamEJB.entities.VisibilityPK</class>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+		</properties>
+
+	</persistence-unit>
+
+</persistence>
